@@ -146,7 +146,7 @@ var Swipeable = React.createClass({displayName: "Swipeable",
 
   render: function () {
     return (
-      React.createElement("div", React.__spread({},  this.props, 
+      React.createElement("div", Object.assign({},  this.props, 
         {onTouchStart: this.touchStart, 
         onTouchMove: this.touchMove, 
         onTouchEnd: this.touchEnd}), 
